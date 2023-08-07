@@ -1,11 +1,38 @@
 <template>
-  <button
-    class="rounded border-0 px-5 py-3 font-medium text-white bg-brand-blue-1 hover:shadow-blue">Sign
-    in</button>
+  <button :class="buttonClass">{{ text }}</button>
 </template>
 
 <script>
 export default {
   name: 'ActionButton',
+  props: {
+    text: {
+      type: String,
+      default: 'Sign in'
+    },
+    isPrimary: {
+      type: Boolean,
+      default: true
+    }
+  },
+  computed: {
+    buttonClass() {
+      return {primary: this.isPrimary, secodary: !this.isPrimary}
+    }
+  },
 }
 </script>
+
+<style scoped>
+button {
+  @apply rounded px-5 py-3 font-medium
+}
+
+.primary {
+  @apply border-0 text-white bg-brand-blue-1
+}
+
+.secodary {
+  @apply bg-transparent text-brand-blue-2
+}
+</style>
