@@ -10,14 +10,16 @@ export default {
       type: String,
       default: 'Sign in'
     },
-    isPrimary: {
-      type: Boolean,
-      default: true
+    type: {
+      type: String,
+      default: 'primary'
     }
   },
   computed: {
     buttonClass() {
-      return {primary: this.isPrimary, secodary: !this.isPrimary}
+      return {
+        [this.type]: true
+      }
     }
   },
 }
