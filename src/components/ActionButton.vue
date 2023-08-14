@@ -8,7 +8,8 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Sign in'
+      default: 'Sign in',
+      required: true
     },
     type: {
       type: String,
