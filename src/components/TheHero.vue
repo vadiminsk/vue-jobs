@@ -1,6 +1,7 @@
 <template>
   <main>
-    <section>I can be your hero</section>
+    <section class="flex flex-col h-screen pt-10 pb-20">I can be your hero
+    </section>
   </main>
 </template>
 
