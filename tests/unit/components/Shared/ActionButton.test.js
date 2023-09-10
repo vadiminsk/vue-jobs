@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/vue'
-import AcrionButton from '@/components/ActionButton.vue'
+import AcrionButton from '@/components/Shared/ActionButton.vue'
 
 describe('AcrionButton', () => {
   it('renders a button', () => {
