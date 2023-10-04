@@ -1,6 +1,6 @@
 <template>
   <main-nav/>
- <router-view/>
+  <router-view/>
 </template>
 
 <script>
@@ -10,7 +10,6 @@ export default {
   name: "App",
   components: {
     MainNav,
-    TheHero
   }
 }
 </script>
